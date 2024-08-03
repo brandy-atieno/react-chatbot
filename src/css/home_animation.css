@@ -1,0 +1,23 @@
+/*HomeAnimations.css */
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+.home-animated-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,23 @@
+/*AboutAnimation.css */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.about-animated-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
