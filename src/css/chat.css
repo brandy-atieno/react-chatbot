@@ -1,4 +1,4 @@
-/* src/css/chat.css */
+/* css/chat.css */
 
 .chat-container {
   display: flex;
@@ -84,4 +84,16 @@
 .chat-input button:hover {
   background-color: #02d182;
 
+}
+
+.chat-typing::before {
+  content: '...';
+  display: inline-block;
+  animation: typing 1.5s infinite steps(5);
+}
+
+@keyframes typing {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
